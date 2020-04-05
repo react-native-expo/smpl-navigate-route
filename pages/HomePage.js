@@ -8,7 +8,13 @@ export default function HomePage({ navigation }) {
 
             <Button
                 title="Go to Details"
-                onPress={() => navigation.navigate('Details')}
+                onPress={() => {
+                    /* 1. Navigate to the Details route with params */
+                    navigation.navigate('Details', {
+                        itemId: 86,
+                        otherParam: 'anything you want here',
+                    });
+                }}
             />
         </View>
     )
