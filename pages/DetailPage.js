@@ -20,6 +20,7 @@ export default function DetailPage({ route, navigation }) {
                 }
             />
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
+            <Button title="Send Result To Home" onPress={() => navigation.navigate('Home', { data: 'Sample data send from Detail Page'})} />
             <Button title="Go back" onPress={() => navigation.goBack()} />
             <Button
                 title="Go back to first screen in stack"
