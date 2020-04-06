@@ -26,7 +26,12 @@ export default function HomePage({ navigation, route }) {
                     });
                 }}
             />
-
+            <Button
+                title="Go to Header Button Page"
+                onPress={() => {
+                    navigation.navigate('HeaderButton');
+                }}
+            />
         </View>
     )
 }
